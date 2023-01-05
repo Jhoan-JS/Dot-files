@@ -3,6 +3,9 @@
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.quoteStyle": "single",
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/dev-gg/.local/bin/black",
   "suggest.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
@@ -14,7 +17,12 @@
     "vue",
     "css",
     "html",
-    "json"
+    "json",
+    "python",
+    "yaml"
   ],
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar"
 }

@@ -1,6 +1,6 @@
-
+#
 neofetch
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+#Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,14 +115,14 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias vi='nvim'
 alias vim='nvim'
-#alias nvim='nvim .' 
+#alias nvim='nvim .'
 #export TERM="alacritty"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export PATH="$PATH:~/.dotnet/tools"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export PATH="$PATH:/home/dev-gg/.local/bin"
+#export PATH="$PATH:~/.dotnet/tools"
 #export DOTNET_ROOT=/snap/dotnet-sdk/current
-export MSBuildSDKsPath="/usr/share/dotnet/sdk/$(dotnet --version)/Sdks"
+#export MSBuildSDKsPath="/usr/share/dotnet/sdk/$(dotnet --version)/Sdks"
 eval $(keychain --eval --quiet ~/gitKey ~/gitKey ~/gitKey)
-#export DOTNET_CLI_TELEMETRY_OPTOUT=1
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
